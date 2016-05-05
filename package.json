@@ -1,0 +1,15 @@
+{
+  "name": "bower-auto-release",
+  "version": "1.0.0",
+  "publishConfig": {
+    "registry": "http://repo.dev.wix/artifactory/api/npm/npm-local/"
+  },
+  "scripts": {
+    "build": ":", 
+    "test": ":",
+    "release": "wnpm-release # This will ensure that ci publishes the module"
+  },
+  "optionalDependencies": {
+    "wnpm-ci": "*"
+  }
+}
