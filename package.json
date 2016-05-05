@@ -11,5 +11,8 @@
   },
   "optionalDependencies": {
     "wnpm-ci": "*"
+  },
+  "bin": {
+    "bower-auto-update": "index.js"
   }
 }
