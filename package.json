@@ -1,6 +1,7 @@
 {
   "name": "bower-auto-release",
   "version": "1.0.0",
+  "main": "index.js",
   "publishConfig": {
     "registry": "http://repo.dev.wix/artifactory/api/npm/npm-local/"
   },
@@ -13,6 +14,6 @@
     "wnpm-ci": "*"
   },
   "bin": {
-    "bower-auto-update": "index.js"
+    "bower-auto-release": "index.js"
   }
 }
