@@ -1,5 +1,6 @@
 #!/usr/bin/env node
-var packageJson = require(process.cwd() + '/package.json');
+var workingDir = process.cwd();
+var packageJson = require(workingDir + '/package.json');
 
 require('child_process')
-  .spawn('node_modules/bower-auto-release/release.sh', [packageJson.version],  {stdio: 'inherit'});
+  .spawn(workingDir + '/release.sh', [packageJson.version, workingDir],  {stdio: 'inherit'});

@@ -7,7 +7,7 @@ git checkout bower-component
 git checkout -b bower-component
 grep -ve "^\(dist\|/.*\.js\)$" .gitignore > .gitignore.new
 mv -f .gitignore.new .gitignore
-cp -r $PROJECT_DIR/dist .
+cp -r $2/dist .
 git add --all .
 git commit -m"bower version $1"
 git tag $1 -a -m"bower version $1"
