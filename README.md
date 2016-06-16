@@ -25,7 +25,7 @@ Just run the command `bower init`, and answer truthfully to all questions :P
 
 This is critical so that we wor against wix's private bower registry
 
-### Run auto-bower-release in your release script
+### Run bower-auto-release in your release script
 
 ```json
 {
