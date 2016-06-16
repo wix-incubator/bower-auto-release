@@ -5,7 +5,7 @@ Ideally you would only publish to npm, but as many older projects still use bowe
 
 ## How to enable bower publishing for your existing npm module
 
-Assuming you already defined you npm module in CI and already use the incredible (wnpm-release)[https://github.com/wix-private/wnpm/tree/master/wnpm-ci] script to automatically bump your node module's version all you have to do in order to publish your package to bower is follow this simple steps:
+Assuming you already defined you npm module in CI and already use the incredible [wnpm-release](https://github.com/wix-private/wnpm/tree/master/wnpm-ci) script to automatically bump your node module's version all you have to do in order to publish your package to bower is follow this simple steps:
 
 ### Add bower.json to your project
 
@@ -27,7 +27,7 @@ This is critical so that we wor against wix's private bower registry
 
 ### Run auto-bower-release in your release script
 
-```package.json
+```json
 {
   "name": "my-package",
   "version": "1.0.0",
