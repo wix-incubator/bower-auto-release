@@ -49,11 +49,11 @@ This is critical so that we wor against wix's private bower registry
 
 ### Register your package in bower
 
-you need to run the following command before pushing your project to git:
+You need to run the following command before pushing your project to git:
 ```sh
 bower register proj-name git-repo-url
 ```
  * proj-name is what ppl will use when installing your component
- * git-repo-url should be SSH clone url in format: git@github.com:wix/GIT_REPO_NAME.git
+ * git-repo-url should be SSH clone url in format: `git@github.com:wix/GIT_REPO_NAME.git`
 
 Once you run this command, all you have to do is push the new project to git and then CI system will publish a new version of your library to bower each time you push some new commits to that git. 
