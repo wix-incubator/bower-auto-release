@@ -49,7 +49,7 @@ This is critical so that we work against wix's private bower registry
 
 ### Your package is automatically registered to bower
 
-Once you're build is complete, your package can be installed with - 
+Once you're build is complete in CI, your package can be installed with - 
 ```sh
 bower install package-name
 ```
