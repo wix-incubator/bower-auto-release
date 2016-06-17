@@ -51,6 +51,6 @@ This is critical so that we work against wix's private bower registry
 
 Once you're build is complete, your package can be installed with - 
 ```sh
-bower install bower-name
+bower install package-name
 ```
-where `bower-name` is the name you gave your package in `bower init` above
+where `package-name` is the name you gave your package in `bower init` above
