@@ -6,7 +6,7 @@
     "registry": "http://repo.dev.wix/artifactory/api/npm/npm-local/"
   },
   "scripts": {
-    "build": ":", 
+    "build": ":",
     "test": ":",
     "release": "wnpm-release # This will ensure that ci publishes the module"
   },
@@ -15,5 +15,8 @@
   },
   "bin": {
     "bower-auto-release": "index.js"
+  },
+  "dependencies": {
+    "bower": "^1.7.9"
   }
 }
