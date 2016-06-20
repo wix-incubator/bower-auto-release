@@ -8,9 +8,11 @@ git checkout -b bower-component
 
 shopt -s extglob dotglob
 rm -rf !(.git)
-cp -r $2/!(.git) .
-grep -ve "^\(dist\|/.*\.js\)$" .gitignore > .gitignore.new
-mv -f .gitignore.new .gitignore
+cp -r $2/$3/!(.git) .
+if [ -a .gitignore ];then
+  grep -ve "^(dist|/.*.js)$" .gitignore > .gitignore.new
+  mv -f .gitignore.new .gitignore
+fi
 
 git add --all .
 git commit -m"bower version $1"
