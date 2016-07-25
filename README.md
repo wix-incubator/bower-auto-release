@@ -47,6 +47,14 @@ This is critical so that we work against wix's private bower registry
 }
 ```
 
+### The `--dist` folder option
+
+By default the contents of your post-build dist folder will be copied to the bower-component's root folder. You can change this behaviour by designating a different folder with the `--dist` option. 
+
+For example to copy the contents of the `build` output folder you would use: `bower-auto-release --dist build`
+
+Or, to copy everything simply use `--dist .` (take note that in such a case `dist` will be removed from `.gitignore` on the bower-component branch).
+
 ### Your package is automatically registered to bower
 
 Once you're build is complete in CI, your package can be installed with - 
