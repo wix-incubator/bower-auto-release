@@ -47,13 +47,19 @@ This is critical so that we work against wix's private bower registry
 }
 ```
 
-### The `--dist` folder option
+### The `--dist` option
 
 By default the contents of your post-build dist folder will be copied to the bower-component's root folder. You can change this behaviour by designating a different folder with the `--dist` option. 
 
 For example to copy the contents of the `build` output folder you would use: `bower-auto-release --dist build`
 
 Or, to copy everything simply use `--dist .` (take note that in such a case `dist` will be removed from `.gitignore` on the bower-component branch).
+
+### The `--git-repo` option
+
+By default your project is pulled from the repository designated by the `GIT_REMOTE_URL` environment variable. You can change this behaviour by designating a different repository with the `--git-repo` option.
+
+For example: `bower-auto-release --git-repo git@github.com:wix-private/my-library`
 
 ### Your package is automatically registered to bower
 

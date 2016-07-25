@@ -17,6 +17,7 @@
     "bower-auto-release": "index.js"
   },
   "dependencies": {
-    "bower": "^1.7.9"
+    "bower": "^1.7.9",
+    "command-line-args": "^3.0.0"
   }
 }
