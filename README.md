@@ -13,15 +13,9 @@ Just run the command `bower init`, and answer truthfully to all questions :P
 
 ### Add .bowerrc to your project
 
-```json
-{
-  "registry": {
-    "search": ["https://bower.herokuapp.com", "http://wix:wix@mirror.wixpress.com:3333"],
-    "register": "http://wix:wix@mirror.wixpress.com:3333",
-    "publish": "http://wix:wix@mirror.wixpress.com:3333"
-  }
-}
-```
+Notice: this is relevant only if you wish to publish your component to a private registry.
+
+Example: https://github.com/wix-private/wix-style/blob/master/.bowerrc
 
 This is critical so that we work against wix's private bower registry
 
@@ -31,9 +25,6 @@ This is critical so that we work against wix's private bower registry
 {
   "name": "my-package",
   "version": "1.0.0",
-  "publishConfig": {
-    "registry": "http://repo.dev.wix/artifactory/api/npm/npm-local/"
-  },
   "scripts": {
     "build": ":", 
     "test": ":",
@@ -59,7 +50,7 @@ Or, to copy everything simply use `--dist .` (take note that in such a case `dis
 
 By default your project is pulled from the repository designated by the `GIT_REMOTE_URL` environment variable. You can change this behaviour by designating a different repository with the `--git-repo` option.
 
-For example: `bower-auto-release --git-repo git@github.com:wix-private/my-library`
+For example: `bower-auto-release --git-repo git@github.com:wix/my-library`
 
 ### Your package is automatically registered to bower
 
