@@ -3,8 +3,8 @@ cd /tmp
 rm -rf bower_component
 git clone $4 bower_component
 cd bower_component
-git checkout bower-component
-git checkout -b bower-component
+git checkout $5
+git checkout -b $5
 
 shopt -s extglob dotglob
 rm -rf !(.git|.|..)
@@ -17,4 +17,4 @@ fi
 git add --all .
 git commit -m"bower version $1"
 git tag $1 -a -m"bower version $1"
-git push origin bower-component --follow-tags
+git push origin $5 --follow-tags
