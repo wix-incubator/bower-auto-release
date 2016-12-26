@@ -52,6 +52,17 @@ By default your project is pulled from the repository designated by the `GIT_REM
 
 For example: `bower-auto-release --git-repo git@github.com:wix/my-library`
 
+This option is typically used on monorepos that have multiple bowers to release. Since bower's design dictates one-to-one relationship between published component and git repo, you should create a separate repo for publishing and pass it using this option.
+
+### The `--branch` option
+
+By default your project is published to a branch named `${package-name}-bower`. You can change this using the `--branch` option.
+
+For example: `bower-auto-release --branch kuku`
+
+In case you use a separate repo for publishing bowers from monorepo as described above, it might make sense to do something like this: 
+`bower-auto-release --git-repo git@github.com:wix/my-library-bower --branch master`
+
 ### Your package is automatically registered to bower
 
 Once you're build is complete in CI, your package can be installed with - 
