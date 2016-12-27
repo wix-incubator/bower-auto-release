@@ -10,7 +10,7 @@ shopt -s extglob dotglob
 rm -rf !(.git|.|..)
 cp -r $2/$3/!(.git|.|..) .
 if [ -a .gitignore ];then
-  grep -ve "^(dist|/.*.js)$" .gitignore > .gitignore.new
+  grep -vE "^(dist/?|/.*.js)$" .gitignore > .gitignore.new
   mv -f .gitignore.new .gitignore
 fi
 
