@@ -11,13 +11,9 @@ Assuming you already defined you npm module in CI and already use the incredible
 
 Just run the command `bower init`, and answer truthfully to all questions :P
 
-### Add .bowerrc to your project
+### When using a private bower registry: Add .bowerrc to your project
 
-**Notice: this is relevant only if you wish to publish your component to a private registry.**
-
- Example: https://github.com/a-private-org/some-project/blob/master/.bowerrc
-
- This is critical so that you work against your private bower registry.
+**Notice: This is critical so that you work against your private bower registry.**
 
 ### Run bower-auto-release in your release script
 
