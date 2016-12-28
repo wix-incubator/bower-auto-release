@@ -15,7 +15,7 @@ Just run the command `bower init`, and answer truthfully to all questions :P
 
 Notice: this is relevant only if you wish to publish your component to a private registry.
 
-Example: https://github.com/wix-private/wix-style/blob/master/.bowerrc
+Example: https://github.com/a-private-org/some-project/blob/master/.bowerrc
 
 This is critical so that we work against wix's private bower registry
 
