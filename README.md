@@ -13,11 +13,11 @@ Just run the command `bower init`, and answer truthfully to all questions :P
 
 ### Add .bowerrc to your project
 
-Notice: this is relevant only if you wish to publish your component to a private registry.
+**Notice: this is relevant only if you wish to publish your component to a private registry.**
 
-Example: https://github.com/a-private-org/some-project/blob/master/.bowerrc
+  Example: https://github.com/a-private-org/some-project/blob/master/.bowerrc
 
-This is critical so that we work against wix's private bower registry
+  This is critical so that you work against your private bower registry
 
 ### Run bower-auto-release in your release script
 
