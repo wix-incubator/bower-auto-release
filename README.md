@@ -44,7 +44,7 @@ Or, to copy everything simply use `--dist .` (note that in this case `dist` will
 
 ### The `--git-repo` option
 
-By default the output of your project is pushed to a branch on the its own repository (designated by the `GIT_REMOTE_URL` environment variable). You can change this by pointing to a different repository using the `--git-repo` option.
+By default the output of your project is pushed to a branch on its own repository (designated by the `GIT_REMOTE_URL` environment variable). You can change this by pointing to a different repository using the `--git-repo` option.
  
 For example: `bower-auto-release --git-repo git@github.com:wix/my-library-bower-component`
 
@@ -57,7 +57,7 @@ By default your project is published to a branch named `${package-name}-bower-co
 For example: `bower-auto-release --branch kuku`
 
 In case you use a separate repository for publishing to bower from a monorepo as described above, it would make sense to do something like this: 
-`bower-auto-release --git-repo git@github.com:wix/my-library-bower --branch master`
+`bower-auto-release --git-repo git@github.com:wix/my-library-bower-component --branch master`
 
 ### Your package is automatically registered to bower
 
