@@ -8,11 +8,12 @@ var bower = require('bower');
 var options = commandLineArgs([
   { name: 'dist', defaultValue: 'dist' },
   { name: 'git-repo', defaultValue: process.env.GIT_REMOTE_URL },
-  { name: 'branch', defaultValue: packageJson.name + '-bower-component' }
+  { name: 'branch', defaultValue: packageJson.name + '-bower-component' },
+  { name: 'version', defaultValue: packageJson.version }
 ]);
 
 require('child_process')
-  .spawn(__dirname + '/release.sh', [packageJson.version, workingDir, options.dist, options['git-repo'], options.branch], {stdio: 'inherit'})
+  .spawn(__dirname + '/release.sh', [options.version, workingDir, options.dist, options['git-repo'], options.branch], {stdio: 'inherit'})
   .on('close', function () {
     console.log('checking if repo needs registering in bower');
     bower.commands.lookup(bowerJson.name).on('end', function(result) {
